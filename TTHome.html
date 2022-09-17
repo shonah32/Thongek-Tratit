@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <title> Thong-Ek & Tratit </title>
+        <link rel="icon" type="image/x-icon" href="TTlogo.png">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+        </style>
+    </head>
+    
+    <body>
+    
+    <div class="parallax"> 
+        <img src="TTlogo.png" class="logo">
+
+        <div class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="TThome.html">HOME</a></li>
+                <li><a href="TTpeople.html">PEOPLE</a></li>
+                <li><a href="contact.asp">SERVICES</a></li>
+                <li><a href="about.asp">CONTACT</a></li>
+                <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+              </ul>
+            
+        </div>
+          
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } 
+            else {
+                x.className = "topnav";
+            }
+        }
+        </script>
+
+        <div class="title"> THONG-EK & TRATIT </div>
+        <div class="subtitle"> LAW OFFICE </div>
+    </div>
+
+    <div class="ourHistory">
+        <h1> OUR HISTORY </h1>
+        <p> Established in 2017, Thong-ek and his son, Tratit, set up a new legal consultancy and services company, namely Thong-ek and Tratit Co., Ltd. using the trade name as <span style="color:#E18216; font-weight:500;"> “Thong-ek & Tratit Law Office”.</span> </p>
+        <p> <span style="color:#E18216; font-weight:500;"> Thong-ek</span> is well-known among major clients in Thailand as one of the leading Thai legal advisors. </p>
+        <p>  <span style="color:#E18216; font-weight:500;"> Tratit</span>, Thong-ek’s only son, is also considered as a reliable and creative legal advisor who can efficiently blend the law and business into an effective solution for clients. </p>
+        <p>  <span style="color:#E18216; font-weight:500;"> Nathara</span>, a daughter of Tratit, will be the third generation who would join the firm soonest after her graduation. </p> 
+        
+    </div> 
+
+
+    <div class="line">
+        <img src="line3.png" class="line"> 
+    </div>
+
+
+    <div class="globalPartners">
+        <h1>GLOBAL PARTNERS/NETWORK</h1>
+        <p> <span style="letter-spacing: 1px">We are a coordinating with the following law firms/network to enable us to provide services for our client worldwide: </span></p>
+    </div>
+
+
+        <div class="container-fluid" id="partners">
+            <div class="row" id="firmRows">
+                <div class="col-md-5" id="firmNames">
+                    <p><span style="color:#E18216;">Zhong Lun Law Firm</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p>China with international offices in London, Tokyo, <br>NY, SF, LA, Hong Kong, and Almaty</p>
+                </div>
+            </div>
+
+            <div class="row" id="firmRows">
+                <div class="col-md-5" id="firmNames">
+                    <p><span style="color:#E18216;">ILA Network of Lawyers</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p>India and worldwide</p>
+                </div>
+            </div>
+
+            <div class="row" id="firmRows">
+                <div class="col-md-5" id="firmNames">
+                    <p><span style="color:#E18216;">ASTRA Advokater</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p>Sweden</p>
+                </div>
+            </div>
+
+            <div class="row" id="firmRows">
+                <div class="col-md-5" id="firmNames">
+                    <p><span style="color:#E18216;">Leung & Wan Solicitors</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p>Hong Kong</p>
+                </div>
+            </div>
+
+        </div>
+        
+     
+        <div class="line">
+            <img src="line3.png" class="line"> 
+        </div>
+
+        <div class="notices">
+            <h1>INTELLECTUAL PROPERTY NOTICE&nbsp;</h1>
+            <input type="image" src="orangePlus2.png" class="moreTextBtn" id="plusImage" onclick="changeImage()"/>
+            <p class="text"> <span class="moreText">All intellectual property rights of any and all of the contents and pictures contained herein belong to Thong-ek and Tratit Co., Ltd. We reserve all rights hereof and shall pursue legal action against any infringement or unauthorized use strictly.</span></p>
+            <script src="script.js"></script>
+        </div>
+
+        <div class="notices">
+            <h1>ANTI-BRIBERY POLICY&nbsp;</h1>
+            <input type="image" src="orangePlus2.png" class="moreTextBtn" id="plusImage2" onclick="changeImage2();showImage();"/>
+            <p class="text"><img src="antibribery.png" id="policyImage" class="moreText"></p>
+        </div>
+
+        <div class="notices">
+            <h1>DISCLAIMER&nbsp;</h1>
+            <input type="image" src="orangePlus2.png" class="moreTextBtn" id="plusImage3" onclick="changeImage3();showDisclaimer();"/>
+            <div id="disclaimer">
+            <p>The information in this website is provided for informational purposes only. None of any part hereof shall constitute our warranty of any kinds. No representation is made that the quality of our legal service is more efficient than of others.
+            <br><br> For clients seeking for our legal advice / service, it is hereby noted that not every matter or project is achieved, and the achievement in each matter / project depends on the particular compositions and concerns. Achievement is not guaranteed.
+            <br><br> For clients seeking for our litigation / dispute resolution service, it is hereby noted that not every client obtains a monetary recovery, and the recovery in each case depends on the particular facts and circumstances. Recovery cannot be guaranteed.
+            <br><br> SELECTING YOUR LAWYER IS AN IMPORTANT DECISION AND SHOULD NOT BE BASED SOLELY ON THE PROFILE.
+            </p>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="line">
+            <img src="line3.png" class="line">
+        </div>
+    
+    
+    <p class="backToTop"><a href=#top>BACK TO THE TOP</a></p>
+
+    </body>
+
+</html>
+

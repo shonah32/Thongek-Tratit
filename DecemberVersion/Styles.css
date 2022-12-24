@@ -1,0 +1,194 @@
+:root{
+    box-sizing: border-box;
+
+    --primary: white;
+    --secondary: #E18216;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em; 
+    align-items: center;
+}
+
+.hamburger{
+    --hm-width: 3em;
+    --hm-height: 0.4em; 
+    --spacing: calc(var(--hm-width) / 4); 
+
+    width: var(--hm-width);
+    height: var(--hm-height);
+    background-color: var(--primary);
+    position: relative;
+
+    left: 95%; /* moves the icon to the right side of the screen */
+
+    transition: transform 0.8s ease-in-out; 
+    z-index: 100;
+
+}
+
+.hamburger::after, .hamburger::before{
+    content: "";
+    width: 50%;
+    height: inherit;
+    background-color: var(--primary);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.hamburger::after{
+    top: calc(-1 * var(--spacing));
+}
+
+.hamburger::before{
+    top: var(--spacing); 
+    left: 50%;
+}
+
+.close.hamburger::before, .close.hamburger::after{
+    left: 50%;
+    transform: translate(-50%) rotate(-90deg);
+}
+
+.close.hamburger{
+    transform: rotate(45deg); 
+}
+
+nav{
+    position: absolute;
+    background-color: var(--secondary);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scaleX(0);
+    transform-origin: left center;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
+}
+
+.revealNav{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu-item{
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    font-size: calc(1.5rem + 2vw); /* makes the font size responsive */
+    opacity: 0;
+    transform: translate(-20em); 
+    display: block;
+    transition: transform 0.8s ease-in-out, opacity 0.3s ease-in; 
+}
+
+.menu li + li{
+    margin-top: 1.5em; 
+}
+
+.revealItems .menu-item{
+    transform: translate(0);
+    opacity: 1;
+}
+
+.revealItems li:nth-child(1) .menu-item{
+    transition-delay: 0.1s;
+}
+
+.revealItems li:nth-child(2) .menu-item{
+    transition-delay: 0.2s;
+}
+
+.revealItems li:nth-child(3) .menu-item{
+    transition-delay: 0.3s;
+}
+
+.revealItems li:nth-child(4) .menu-item{
+    transition-delay: 0.4s;
+}
+
+.logo{
+    position: absolute;
+}
+
+.parallax {
+    background-image: url("hammer.png");
+    min-height: 1000px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .hamburger{
+        --hm-width: 3em;
+        --hm-height: 0.4em; 
+        --spacing: calc(var(--hm-width) / 4); 
+    
+        width: var(--hm-width);
+        height: var(--hm-height);
+        background-color: var(--primary);
+        position: relative;
+    
+        left: 90%; /* moves the icon to the right side of the screen */
+    
+        transition: transform 0.8s ease-in-out; 
+        z-index: 100;
+    
+    }
+
+    .logo{
+        left: 2%; 
+    }
+
+}
+
+
+

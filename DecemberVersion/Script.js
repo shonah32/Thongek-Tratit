@@ -82,23 +82,23 @@ function changePlus1(){
 }
 
 function changePlus2(){
-    var symbol = document.getElementById("propPlus").innerHTML;
+    var symbol = document.getElementById("antiPlus").innerHTML;
     if(symbol == "&nbsp;+"){
-        document.getElementById("propPlus").innerHTML = "&nbsp;-"
+        document.getElementById("antiPlus").innerHTML = "&nbsp;-"
     }
     else{
-        document.getElementById("propPlus").innerHTML = "&nbsp;+"
+        document.getElementById("antiPlus").innerHTML = "&nbsp;+"
     }
 
 }
 
 function changePlus3(){
-    var symbol = document.getElementById("propPlus").innerHTML;
+    var symbol = document.getElementById("discPlus").innerHTML;
     if(symbol == "&nbsp;+"){
-        document.getElementById("propPlus").innerHTML = "&nbsp;-"
+        document.getElementById("discPlus").innerHTML = "&nbsp;-"
     }
     else{
-        document.getElementById("propPlus").innerHTML = "&nbsp;+"
+        document.getElementById("discPlus").innerHTML = "&nbsp;+"
     }
 
 }

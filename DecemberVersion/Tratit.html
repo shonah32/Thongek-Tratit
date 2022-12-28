@@ -28,53 +28,112 @@
 
     <div class="block md:flex md:text-left pt-8 sm:pt-10 md:pt-12 lg:pt-20">
 
-        <div class="order-1 md:order-1 border sm:w-2/5 h-full">
+        <div class="order-1 md:order-1 sm:w-full md:w-2/5 h-full">
             <img class="w-3/5 mx-auto sm:w-1/2 md:w-4/5 xl:w-3/5 rounded-xl " src="Portrait.jpeg">
-            <a href="#" class="w-2/5 text-xs sm:w-2/5 md:w-3/5 xl:w-2/5 mx-auto mt-4 sm:mt-6 px-2 md:text-base sm:px-5 py-2 sm:py-1 sm:py-2 block rounded-lg text-center content-center text-white font-medium" style="background-color: #E18216;">Areas of Practice</a>
+            <div id="myDIV" class="flex items-center justify-center py-6 font-semibold text-sm">
+                <button id="expBtn" class="active btn max-md:px-3 md:px-5" onclick="displayData('1')" style="color: #4d4d4d;">EXPERIENCE</button>
+                <button id="areasPracBtn" class="btn max-md:px-3 md:px-5" onclick="displayData('2')" style="color: #4d4d4d;">AREAS OF PRACTICE</button>
+            </div>
+        </div> 
+
+        <div class="order-2 md:order-2 sm:w-full md:w-3/5 h-full">
+            <h1 class="text-2xl text-center pt-6 md:text-start sm:pt-0 sm:text-3xl md:text-4xl font-bold tracking-wider" style="color: #383838;">TRATIT PHONGORDETE</h1>
+            
+            <div id="workExpTratit">
+                <h3 class="text-sm text-center sm:text-center font-semibold px-6 sm:px-0 md:text-start sm:mx-0 sm:text-lg md:text-base sm:pt-3 md:pr-4 tracking-widest" style="color: #383838;">LL.B. Chulalongkorn University, LL.M. University of Minnesota</h3>
+                <p class="text-justify lg:mx-0 text-sm mx-10 sm:mx-8 md:mr-16 lg:mr-28 pt-3 sm:text-start tracking-wider md:text-sm " style="color: #383838;">Mr. Tratit Phongordete has practised in the legal field since 2000. He started his career as a paralegal and gained experience in every area of legal practice, including but not limited to contract drafting, legal consultancy, litigation, immigration law, labour law. He also holds the notary public license which enable him to notarize the documents in compliance with the requirements of the Lawyer Council of Thailand.</p>
+                <h2 class="text-lg text-center md:text-start sm:text-2xl md:text-2xl font-bold tracking-wider pt-8 md:pt-6 lg:pt-10" style="color: #383838;">WORK EXPERIENCE</h2>
+            
+                <table class="table-fixed mb-8">
+                    <tbody>
+                        <tr>
+                            <td class="lg:pr-28 xl:pr-36 tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">Director, Thong-ek and Tratit Law Office</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2017-Present</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">COO, Asia Atlantic Airlines</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2017-2018</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">Legal counsel, various leading companies</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2007-2017</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">Legal Manager, Nok Airlines</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2005-2007</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">Associate, Chandler & Thong-ek Law Offices</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2002-2004</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-24" style="color: #383838;">Associate, First Bangkok Law & Practice</td>
+                            <td class="font-semibold tracking-wider pt-6 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">2000-2001</td>
+                        </tr>
+                        <tr>
+                            <td class="tracking-wider pt-6 pb-4 text-sm pl-10 sm:pl-24" style="color: #383838;">Paralegal, George & Kowit</td>
+                            <td class="font-semibold tracking-wider pt-6 pb-4 text-sm sm:pl-4 align-top pr-6" style="color: #E18216;">1999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="areasPracTratit" class="md:ml-52 md:ml-0 md:mr-20">
+                <div class="grid grid-cols-2 gap-4 pt-10">
+                    <div class="border-2 rounded-xl w-11/12 sm:w-11/12 lg:w-4/5 h-4/5 py-8 px-4 ml-auto areasPracExpert">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">LITIGATION</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 sm:w-11/12 lg:w-4/5 h-4/5 py-8 px-4 areasPracExpert">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">LABOUR LAW</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-4">
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 ml-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">BOI APPLICATION</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mx-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">CONTRACT DRAFTING</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mr-20 areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">CIVIL & COMMERCIAL LAW</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-4">
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 ml-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">MERGER & ACQUISITION</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mx-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">NOTARIAL SERVICES</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mr-20 areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">FOREIGN BUSINESS LICENSE</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-4">
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 ml-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">VISA & WORK PERMIT</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mx-auto areasPrac">
+                        <p class="font-medium tracking-wide text-xs md:text-xs lg:text-sm">ADMINISTRATIVE LAW</p>
+                    </div>
+                    <div class="border-2 rounded-xl w-11/12 lg:w-4/5 h-4/5 py-8 px-4 mr-20 areasPrac">
+                        <p class="font-medium tracking-wide text-xs lg:text-sm">CRIMINAL LAW</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 pb-8">
+                    <p class="pl-10 md:pl-8 lg:pl-12 text-sm"><span style="color:#E18216;">&#9635;</span> &nbsp; = &nbsp; Areas of Expertise</p>
+                </div>
+
+            </div>
+
+
         </div>
 
-        <div class="order-2 md:order-2 border sm:w-3/5 h-full">
-            <h1 class="text-2xl text-center pt-6 sm:text-start sm:pt-0 sm:text-5xl md:text-4xl font-bold tracking-wider" style="color: #383838;">TRATIT PHONGORDETE</h1>
-            <h3 class="text-sm text-center font-semibold px-6 sm:px-0 sm:text-start sm:mx-0 sm:text-xl md:text-base sm:pt-3 sm:pr-4 tracking-widest" style="color: #383838;">LL.B. Chulalongkorn University, LL.M. University of Minnesota</h3>
-            <p class="text-justify lg:mx-0 text-sm mx-10 sm:mx-0 sm:mr-32 md:mr-16 lg:mr-28 pt-3 sm:text-start tracking-wider md:text-sm " style="color: #383838;">Mr. Tratit Phongordete has practised in the legal field since 2000. He started his career as a paralegal and gained experience in every area of legal practice, including but not limited to contract drafting, legal consultancy, litigation, immigration law, labour law. He also holds the notary public license which enable him to notarize the documents in compliance with the requirements of the Lawyer Council of Thailand.</p>
-        
-            <h2 class="text-lg text-center sm:text-start sm:text-4xl md:text-2xl font-bold tracking-wider pt-8 md:pt-6 lg:pt-10" style="color: #383838;">WORK EXPERIENCE</h2>
-        
-            <table class="table-fixed">
-                <tbody>
-                    <tr>
-                        <td class="lg:pr-28 xl:pr-36 tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">Director, Thong-ek and Tratit Law Office</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2017-Present</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">COO, Asia Atlantic Airlines</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2017-2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">Legal counsel, various leading companies</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2007-2017</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">Legal Manager, Nok Airlines</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2005-2007</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">Associate, Chandler & Thong-ek Law Offices</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2002-2004</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 text-sm pl-10 sm:pl-0" style="color: #383838;">Associate, First Bangkok Law & Practice</td>
-                        <td class="font-semibold tracking-wider pt-6 text-sm md:pl-4 align-top" style="color: #E18216;">2000-2001</td>
-                    </tr>
-                    <tr>
-                        <td class="tracking-wider pt-6 pb-4 text-sm pl-10 sm:pl-0" style="color: #383838;">Paralegal, George & Kowit</td>
-                        <td class="font-semibold tracking-wider pt-6 pb-4 text-sm md:pl-4 align-top" style="color: #E18216;">1999</td>
-                    </tr>
-                </tbody>
-            </div>
-        
-        </div>
-    
+
     </div>
 
     <script src="Script.js"></script>

@@ -21,45 +21,6 @@ var iconTracker3 = "plus";
 
 //----- FUNCTIONS ----- 
 
-function changeImage(){
-    var icon = document.getElementById('plusImage');
-   if(iconTracker == "plus"){
-    icon.src = "orangeMinus.png"; 
-    iconTracker = "minus"; 
-   }
-   else{
-    icon.src = "orangePlus2.png";
-    iconTracker = "plus"; 
-   }
-
-}
-
-function changeImage2(){
-    var icon = document.getElementById('plusImage2');
-   if(iconTracker2 == "plus"){
-    icon.src = "orangeMinus.png"; 
-    iconTracker2 = "minus"; 
-   }
-   else{
-    icon.src = "orangePlus2.png";
-    iconTracker2 = "plus"; 
-   }
-
-}
-
-function changeImage3(){
-    var icon = document.getElementById('plusImage3');
-   if(iconTracker3 == "plus"){
-    icon.src = "orangeMinus.png"; 
-    iconTracker3 = "minus"; 
-   }
-   else{
-    icon.src = "orangePlus2.png";
-    iconTracker3 = "plus"; 
-   }
-
-}
-
 function showImage() {
     const policy = document.getElementById("policyImage");
     if (policy.style.display === "block") {
@@ -109,4 +70,36 @@ function displayData(num){
     }
 } 
 
+function changePlus1(){
+    var symbol = document.getElementById("propPlus").innerHTML;
+    if(symbol == "&nbsp;+"){
+        document.getElementById("propPlus").innerHTML = "&nbsp;-"
+    }
+    else{
+        document.getElementById("propPlus").innerHTML = "&nbsp;+"
+    }
+
+}
+
+function changePlus2(){
+    var symbol = document.getElementById("propPlus").innerHTML;
+    if(symbol == "&nbsp;+"){
+        document.getElementById("propPlus").innerHTML = "&nbsp;-"
+    }
+    else{
+        document.getElementById("propPlus").innerHTML = "&nbsp;+"
+    }
+
+}
+
+function changePlus3(){
+    var symbol = document.getElementById("propPlus").innerHTML;
+    if(symbol == "&nbsp;+"){
+        document.getElementById("propPlus").innerHTML = "&nbsp;-"
+    }
+    else{
+        document.getElementById("propPlus").innerHTML = "&nbsp;+"
+    }
+
+}
 

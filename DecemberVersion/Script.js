@@ -103,3 +103,16 @@ function changePlus3(){
 
 }
 
+function stopScroll(){
+    var burger = document.getElementById("burger"); 
+    if(burger.classList.contains("clicked")){
+        burger.classList.remove("clicked"); 
+        document.getElementById("bod").style.overflow = "scroll";
+    }
+    else{
+        burger.classList.add("clicked"); 
+        document.getElementById("bod").style.overflow = "hidden";
+    }
+    
+}
+

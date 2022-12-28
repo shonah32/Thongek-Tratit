@@ -1,0 +1,225 @@
+:root{
+    box-sizing: border-box;
+
+    --primary: #383838;
+    --secondary: #E18216;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em; 
+    align-items: center;
+}
+
+.hamburger{
+    --hm-width: 3em;
+    --hm-height: 0.4em; 
+    --spacing: calc(var(--hm-width) / 4); 
+
+    width: var(--hm-width);
+    height: var(--hm-height);
+    background-color: var(--primary);
+    position: relative;
+
+    left: 95%; /* moves the icon to the right side of the screen */
+
+    transition: transform 0.8s ease-in-out; 
+    z-index: 100;
+
+}
+
+.hamburger::after, .hamburger::before{
+    content: "";
+    width: 50%;
+    height: inherit;
+    background-color: var(--primary);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.hamburger::after{
+    top: calc(-1 * var(--spacing));
+}
+
+.hamburger::before{
+    top: var(--spacing); 
+    left: 50%;
+}
+
+.close.hamburger::before, .close.hamburger::after{
+    left: 50%;
+    transform: translate(-50%) rotate(-90deg);
+    background-color: white;
+}
+
+.close.hamburger{
+    transform: rotate(45deg); 
+    background-color: white;
+}
+
+nav{
+    position: absolute;
+    background-color: var(--secondary);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scaleX(0);
+    transform-origin: left center;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
+}
+
+.revealNav{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu-item{
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    font-size: calc(1.5rem + 2vw); /* makes the font size responsive */
+    opacity: 0;
+    transform: translate(-20em); 
+    display: block;
+    transition: transform 0.8s ease-in-out, opacity 0.3s ease-in; 
+}
+
+.menu li + li{
+    margin-top: 1.5em; 
+}
+
+.revealItems .menu-item{
+    transform: translate(0);
+    opacity: 1;
+}
+
+.revealItems li:nth-child(1) .menu-item{
+    transition-delay: 0.1s;
+}
+
+.revealItems li:nth-child(2) .menu-item{
+    transition-delay: 0.2s;
+}
+
+.revealItems li:nth-child(3) .menu-item{
+    transition-delay: 0.3s;
+}
+
+.revealItems li:nth-child(4) .menu-item{
+    transition-delay: 0.4s;
+}
+
+.logo{
+    position: absolute;
+}
+
+.serviceText{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceText:hover{
+    background-color: #E18216;
+    transition: 0.3s;
+}
+
+.serviceText:hover p{
+    color: white; 
+}
+
+.modalBod{
+    height: 70vh;
+    overflow-y: auto;
+}
+
+button{
+    color:#383838; 
+}
+
+.active, .btn:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 7px;
+    color: #E18216 !important;
+}
+
+#workExpTratit{
+    display: block;
+}
+
+#areasPracTratit{
+    display: none; 
+}
+
+.areasPracExpert{
+    border-color: #E18216; 
+    color:#E18216;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.areasPrac{
+    border-color: #383838; 
+    color:#383838;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .hamburger{
+        --hm-width: 3em;
+        --hm-height: 0.4em; 
+        --spacing: calc(var(--hm-width) / 4); 
+    
+        width: var(--hm-width);
+        height: var(--hm-height);
+        background-color: var(--primary);
+        position: relative;
+    
+        left: 90%; /* moves the icon to the right side of the screen */
+    
+        transition: transform 0.8s ease-in-out; 
+        z-index: 100;
+    
+    }
+
+    .logo{
+        left: 2%; 
+    }
+
+    .infoSection{
+        width: 55%;
+        height: 100%;
+        margin: auto;
+    }
+
+}

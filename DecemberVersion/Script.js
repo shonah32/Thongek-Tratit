@@ -18,6 +18,9 @@ var iconTracker = "plus";
 var iconTracker2 = "plus";
 var iconTracker3 = "plus";
 
+
+//----- FUNCTIONS ----- 
+
 function changeImage(){
     var icon = document.getElementById('plusImage');
    if(iconTracker == "plus"){
@@ -75,3 +78,35 @@ function showImage() {
         disclaimer.style.display = "block";
     }
   }
+
+
+  function TableDisplay(modalName){
+    const outputTable = document.getElementById(modalName);
+
+    if (outputTable.style.display === "none"){
+        outputTable.style.display = "block";
+    }
+    else{
+        outputTable.style.display = "none";
+}}
+
+
+function displayData(num){
+    if(num == 1){
+        document.getElementById("areasPracTratit").style.display = "none";
+        document.getElementById("workExpTratit").style.display = "block"; 
+
+        expBtn.classList.add("active");
+        areasPracBtn.classList.remove("active");
+    }
+    else if(num == 2){
+        document.getElementById("workExpTratit").style.display = "none";
+        document.getElementById("areasPracTratit").style.display = "block";
+
+        expBtn.classList.remove("active");
+        areasPracBtn.classList.add("active");
+        
+    }
+} 
+
+

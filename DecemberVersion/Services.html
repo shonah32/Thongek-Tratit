@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="StylesPeople.css">
+    <link rel="stylesheet2" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+    </style>
+    <title>Thong-Ek & Tratit</title>
+</head>
+<body>
+    <header>
+        <img src="TTlogo.png" class="logo pt-4 w-24 sm:w-28 sm:pr-4 lg:w-36 xl:w-40 xl:pt-8 2xl:w-40 lg:pl-4">
+        <a href="#" class="hamburger"></a>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu-item" href="Home.html">Home</a></li>
+                <li><a class="menu-item" href="People.html">People</a></li>
+                <li><a class="menu-item" href="Services.html">Services</a></li>
+                <li><a class="menu-item" href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="text-3xl md:text-4xl text-center sm:text-start lg:text-5xl pt-10 md:pl-20 lg:pl-64 xl:pl-64 tracking-widest font-semibold pb-12" style="color: #383838;">OUR SERVICES</h1>
+
+    <div class="grid grid-rows-4 grid-flow-col gap-2 mx-4 md:mx-20 lg:mx-64">
+
+        <div class="w-7/8 h-full text-center">
+            <div class="grid grid-cols-3 gap-4 md:gap-2 md:gap-10 lg:gap-12 xl:gap-20">
+                <button type="button" data-modal-toggle="corpReg">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 px-4 serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-xs lg:text-base">CORPORATE REGISTRATION / AUTHORITY LIAISON</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="legCon">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">LEGAL CONSULTANCY</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="mergAc">
+                <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+					<p class="font-medium tracking-wide text-xs md:text-base">MERGER & ACQUISITION</p>
+				</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="w-7/8 h-full text-center">
+            <div class="grid grid-cols-3 gap-4 md:gap-2 md:gap-10 lg:gap-12 xl:gap-20">
+                <button type="button" data-modal-toggle="conDraft">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 px-4 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">CONTRACT DRAFTING</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="litDis">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs lg:text-base">LITIGATION & DISPUTE <br> RESOLUTION</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="visa">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">VISA & WORK <br> PERMIT</p>
+                    </div>
+                </button>   
+            </div>
+        </div>
+
+        <div class="w-7/8 h-full text-center">
+            <div class="grid grid-cols-3 gap-4 md:gap-10 lg:gap-12 xl:gap-20">
+                <button type="button" data-modal-toggle="boiApp">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 px-4 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">BOI APPLICATION</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="foreignBus">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">FOREIGN <br> BUSINESS LICENSE</p>
+                    </div>
+                </button>
+                <button type="button" data-modal-toggle="notServ">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">NOTARIAL SERVICES</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="w-7/8 h-full text-center">
+            <div class="grid grid-cols-3 gap-4 md:gap-10 lg:gap-12 xl:gap-20">
+                <div>
+				</div>
+                <button type="button" data-modal-toggle="legTrans">
+                    <div class="border-2 rounded-xl w-7/8 h-4/5 py-10 md:text-base serviceText" style="border-color: #E18216; color:#E18216;">
+                        <p class="font-medium tracking-wide text-xs md:text-base">LEGAL TRANSLATION <br> SERVICE</p>
+                    </div>
+                </button>
+                <div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- MODAL CONTENTS-->
+  
+    <!-- CORPORATE REGISTRATION / AUTHORITY LIAISON -->
+    <!-- Main modal -->
+    <div id="corpReg" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        CORPORATE REGISTRATION / AUTHORITY LIAISON 
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="corpReg">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 pb-12 space-y-6 modalBod">
+                <div class="space-y-2">
+                    <h3 class="text-lg tracking-wide font-semibold">
+                        Department of Business Development
+                    </h3>
+                    <p class="text-base text-gray-500">
+                        We provide all types of corporate registration services with the Department of Business Development including advice for full compliance with applicable rules and regulations.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg tracking-wide font-semibold">
+                        Revenue Department
+                    </h3>
+                    <p class="text-base text-gray-500">
+                        We provide liaison services with the Revenue Department in various matters including requesting for document copy, defend tax issues, tax filing, etc.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg tracking-wide font-semibold">
+                        Social Security & Labour Office 
+                    </h3>
+                    <p class="text-base text-gray-500">
+                        We provide advice in relation to the social security filing and liaison services with the labour office to initiate/defend labour dispute, as well as to follow up with the related matters and suggest the finest solution.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg tracking-wide font-semibold">
+                        Other Authorities 
+                    </h3>
+                    <p class="text-base text-gray-500">
+                        We deals with other authorities to address your matters, including the district office, Office of The Attorney General, Ombudsman, Civil Aviation Authority of Thailand, Stock Exchange of Thailand, Consumer Protection Committee, and other government authorities / state enterprises.
+                    </p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- LEGAL CONSULTANCY -->
+  <!-- Main modal -->
+    <div id="legCon" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+        <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        LEGAL CONSULTANCY
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="legCon">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6 modalBod">
+                    <div class="space-y-2">
+                        <p class="text-base text-gray-500">
+                            We provide legal consultancy in various laws and advise the best possible and practicable suggestion to apply the law to your business or matter. We do not focus on avoiding the law by using its loophole. Rather, we focus on looking forward to the sustainable solution for our client.
+                        </p>
+                    </div>
+                    <div class="space-y-2 pb-4">
+                        <p class="text-base text-gray-500">
+                            Our special expertise includes the following laws/matters:
+                        </p>
+                        <div class="flex flex-col md:grid md:grid-cols-3">
+                            <div>
+                                <ul class="list-disc pl-6 text-gray-500">
+                                    <li>Aviation Law</li>
+                                    <li>Labour Law</li>
+                                    <li>Civil Law</li>
+                                    <li>Criminal Law</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="list-disc pl-6 sm:pl-0 text-gray-500">
+                                    <li>Foreign Business Law</li>
+                                    <li>Corporate Law</li>
+                                    <li>Taxation</li>
+                                    <li>Computer Crime</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="list-disc pl-6 sm:pl-0 text-gray-500">
+                                    <li>Intellectual Property Law</li>
+                                    <li>Land & Condominium Law</li>
+                                    <li>Board of Investment</li>
+                                    <li>Food & Drugs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-base text-gray-500">
+                            Our experience in providing legal consultancy covers the following industries:
+                        </p>
+                        <div class="flex flex-col md:grid md:grid-cols-4">
+                            <div>
+                                <ul class="list-disc pl-6 text-gray-500">
+                                    <li>Airlines</li>
+                                    <li>Restaurant</li>
+                                    <li>Import/Export</li>
+                                    <li>Agriculture</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="list-disc pl-6 text-gray-500">
+                                    <li>Automobile</li>
+                                    <li>Distribution</li>
+                                    <li>Property</li>
+                                    <li>Construction</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="list-disc pl-6 text-gray-500">
+                                    <li>Pharmacy</li>
+                                    <li>Logistics</li>
+                                    <li>Mining</li>
+                                    <li>Movie/Theatre</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="list-disc pl-6 text-gray-500">
+                                    <li>Hospitality</li>
+                                    <li>Insurance</li>
+                                    <li>Football</li>
+                                    <li>International <br>Trade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- MERGER & ACQUISITION -->
+    <!-- Main modal -->
+    <div id="mergAc" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        MERGER & ACQUISITION 
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="mergAc">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 pb-12 space-y-6">
+                <div class="space-y-2">
+                    <p class="text-base text-gray-500">
+                        We proceed with the whole process of merger & acquisition starting from conducting the due diligence, contract negotiation, closing, and performing post- closing obligations.
+                    </p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- CONTRACT DRAFTING -->
+    <!-- Main modal -->
+    <div id="conDraft" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        CONTRACT DRAFTING 
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="conDraft">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 pb-12 space-y-6">
+                <div class="space-y-4">
+                    <p class="text-base text-gray-500">
+                        Our contract drafting is unique to fit the requirements of the client. We do not sell template or copy and paste the standard contract.
+                    </p>
+                    <p class="text-base text-gray-500">
+                        Our tailor-made contract starts from the good interview with the client to collect their requirements and understand the issues in concern. Thereafter, we draft and revise the draft as per the comments and view of the client until it is satisfied. We also share our idea in drafting efficient contract specifically for our client’s business
+                    </p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- LITIGATION & DISPUTE RESOLUTION -->
+    <!-- Main modal -->
+    <div id="litDis" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        LITIGATION & DISPUTE RESOLUTION  
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="litDis">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            Our contract drafting is unique to fit the requirements of the client. We do not sell template or copy and paste the standard contract.
+                        </p>
+                        <p class="text-base text-gray-500">
+                            Our tailor-made contract starts from the good interview with the client to collect their requirements and understand the issues in concern. Thereafter, we draft and revise the draft as per the comments and view of the client until it is satisfied. We also share our idea in drafting efficient contract specifically for our client’s business
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VISA & WORK PERMIT -->
+    <!-- Main modal -->
+    <div id="visa" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        VISA & WORK PERMIT  
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="visa">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            We provide service to ensure the client’s full compliance in visa and work permit matters.
+                        </p>
+                        <p class="text-base text-gray-500">
+                            We provide advice before the expats would enter into the country until their work permits are issued. We also provide services to renew their visa and perform 90-day report.
+                        </p>
+                        <p class="text-base text-gray-500">
+                            Additionally, we provide service for pilots and other careers which require special permission from the Labour Department to obtain their work permit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOI Application -->
+    <!-- Main modal -->
+    <div id="boiApp" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        BOI APPLICATION  
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="boiApp">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            We lead our client to the correct channel of BOI application (Board of Investment) and provide consultation in relation to exercising BOI privileges. We also provide advice about the planning for BOI project, including the machinery import, expat employment, producing annual financial statements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foreign Business License -->
+    <!-- Main modal -->
+    <div id="foreignBus" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        FOREIGN BUSINESS LICENSE   
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="foreignBus">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            We provide advice and apply foreign business license to the foreign company client. We also provide clear information about the timeline and possibility of the application, as well as the post-obligations of the client to comply with and perform the conditions of the license.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notarial Services -->
+    <!-- Main modal -->
+    <div id="notServ" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        NOTARIAL SERVICES   
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="notServ">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            Our firm is registered with the Lawyer Council to perform the notarial services under the Thai practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Translation Service -->
+    <!-- Main modal -->
+    <div id="legTrans" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full" style="z-index: 200;">
+        <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-bold tracking-wider text-gray-900 pl-2 pt-2">
+                        LEGAL TRANSLATION SERVICES   
+                    </h3>
+                    <button type="button" class="pt-2 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="legTrans">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+              </div>
+              <!-- Modal body -->
+                <div class="p-6 pb-12 space-y-6">
+                    <div class="space-y-4">
+                        <p class="text-base text-gray-500">
+                            We do not provide just a translation, but it is to translate word-by-word in the legal language recognized worldwide. We provide translation service for various languages including Japanese, Swedish, Finish, and other languages as may be required by our client.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="Script.js"></script>
+
+</body>
+</html>

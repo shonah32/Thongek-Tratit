@@ -241,12 +241,12 @@ nav{
 
     .parallax {
         background-image: url("grid.jpeg");
-    min-height: 100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw; 
+        min-height: 100vh; 
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw; 
     }
 
 }
@@ -254,12 +254,12 @@ nav{
 @media only screen and (max-width: 425px) {
     .parallax {
         background-image: url("grid.jpeg");
-    min-height: 100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw; 
+        min-height: 100vh; 
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw; 
     }
 
 }

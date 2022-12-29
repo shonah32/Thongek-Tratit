@@ -135,11 +135,12 @@ nav{
 
 .parallax {
     background-image: url("grid.jpeg");
-    min-height: 1000px; 
+    min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw; 
 }
 
 .title{
@@ -237,18 +238,15 @@ nav{
         height: 100%;
         margin: auto;
     }
-    
+
     .parallax {
         background-image: url("grid.jpeg");
-        min-height: 800px; 
+        min-height: 100vh; 
         background-attachment: fixed;
         background-position: center !important;
         background-repeat: no-repeat;
         background-size: cover;
-        align-items: center;
-        align-content: center;
-        margin: 0px;
-        width: 100% !important; 
+        width: 100vw;
     }
 
 }
@@ -256,15 +254,16 @@ nav{
 @media only screen and (max-width: 425px) {
     .parallax {
         background-image: url("grid.jpeg");
-        min-height: 800px; 
+        min-height: 100vh; 
         background-attachment: fixed;
         background-position: center !important;
         background-repeat: no-repeat;
         background-size: cover;
-        align-items: center;
-        align-content: center;
-        margin: 0px;
-        width: 100% !important; 
+        width: 100vw; 
     }
 
 }
+
+
+/* ---------- end of Home.html styles ---------- */
+

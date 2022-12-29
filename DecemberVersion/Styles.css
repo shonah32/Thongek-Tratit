@@ -237,5 +237,18 @@ nav{
         height: 100%;
         margin: auto;
     }
+    
+    .parallax {
+        background-image: url("hammer.png");
+        min-height: 800px; 
+        background-attachment: fixed;
+        background-position: center !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+        margin: 0px;
+        width: 100% !important; 
+    }
 
 }

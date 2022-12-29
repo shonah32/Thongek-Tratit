@@ -256,7 +256,7 @@ nav{
         background-image: url("grid.jpeg");
         min-height: 100vh; 
         background-attachment: fixed;
-        background-position: 50% 50%;
+        background-position: 50% 75%;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw; 

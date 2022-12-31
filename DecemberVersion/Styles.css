@@ -212,7 +212,7 @@ nav{
 
 @media only screen and (max-width: 1000px) {
     .parallax {
-        background: url("hammer.png") top right no-repeat;
+        background: url("hammer.png") center top no-repeat;
         background-attachment: fixed;
     }
 

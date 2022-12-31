@@ -240,7 +240,7 @@ nav{
     }
 
     .parallax {
-        background: url("hammer2.png") center center no-repeat;
+        background: url("hammer2.png") top left no-repeat;
         background-attachment: fixed;
     }
 

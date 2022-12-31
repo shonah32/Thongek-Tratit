@@ -249,6 +249,7 @@ nav{
     .parallax {
         background: url("hammer2.png") top right no-repeat;
         background-attachment: fixed;
+        background-size: contain; 
     }
 
 }
@@ -257,6 +258,7 @@ nav{
     .parallax {
         background: url("hammer3.png") top right no-repeat;
         background-attachment: fixed;
+        background-size: contain; 
     }
 }
 /* ---------- end of Home.html styles ---------- */

@@ -134,7 +134,7 @@ nav{
 }
 
 .parallax {
-    background-image: url("grid.jpeg");
+    background-image: url("hammer.png");
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -240,26 +240,9 @@ nav{
     }
 
     .parallax {
-        background-image: url("grid.jpeg");
+        background: url("hammer2.jpeg") top right no-repeat;
         min-height: 100vh; 
         background-attachment: fixed;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw; 
-    }
-
-}
-
-@media only screen and (max-width: 425px) {
-    .parallax {
-        background-image: url("grid.jpeg");
-        min-height: 100vh; 
-        background-attachment: fixed;
-        background-position: 50% 75%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw; 
     }
 
 }

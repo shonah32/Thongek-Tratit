@@ -209,20 +209,11 @@ nav{
     letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 1600px) {
-    .parallax {
-        background: url("hammer.png") center center no-repeat;
-        background-attachment: fixed;
-        background-size: cover; 
-    }
-
-}
 
 @media only screen and (max-width: 1000px) {
     .parallax {
         background: url("hammer.png") center top no-repeat;
         background-attachment: fixed;
-        background-size: cover; 
     }
 
 }

@@ -240,8 +240,7 @@ nav{
     }
 
     .parallax {
-        background: url("hammer2.png") right center no-repeat;
-        min-height: 100vh; 
+        background: url("hammer2.png") top right no-repeat;
         background-attachment: fixed;
     }
 

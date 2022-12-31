@@ -213,6 +213,7 @@ nav{
     .parallax {
         background: url("hammer.png") center top no-repeat;
         background-attachment: fixed;
+        background-size: cover; 
     }
 
 }
@@ -221,6 +222,7 @@ nav{
     .parallax {
         background: url("hammer.png") center top no-repeat;
         background-attachment: fixed;
+        background-size: cover; 
     }
 
 }

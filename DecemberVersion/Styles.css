@@ -137,7 +137,7 @@ nav{
     background-image: url("hammer.png");
     min-height: 100vh; 
     background-attachment: fixed;
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover; 
 }
